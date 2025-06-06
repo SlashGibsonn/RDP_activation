@@ -19,7 +19,7 @@
    Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
    ```
 
-3. Check RDP Status, if its value equals to zero thus RDP connection is allowed 
+3. Check RDP Status, if its value equals to zero thus RDP connection is allowed (change based on your computer's username)
    ```sh
    net localgroup "Remote Desktop Users" nama_user /add
    ```
@@ -28,3 +28,6 @@
    ```sh
    Restart-Service TermService
    ```
+
+Note: 
+- In some cases, you can skip steps 3 & 4 if you have already completed step 3 previously.
